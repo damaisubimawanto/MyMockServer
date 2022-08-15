@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NostraTest</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="retry">retry</string>
+    <string name="someting_wrong">Somthing Wrong !</string>
+    <string name="no_data_to_load">no data to load..</string>
+</resources>

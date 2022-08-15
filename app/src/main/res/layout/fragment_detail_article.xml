@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable
+            name="title"
+            type="String" />
+
+        <variable
+            name="author"
+            type="String" />
+
+        <variable
+            name="publishedAt"
+            type="String" />
+
+        <variable
+            name="urlImage"
+            type="String" />
+
+        <variable
+            name="content"
+            type="String" />
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".presentation.detail_article.DetailArticleFragment">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:maxLines="3"
+                android:text="@{title}"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="wekewkwe wkewkekwke wekwekwke wkewkekwek asdasdasda asdasd asdasd asdasd asdad asdasd asdasd asda"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:text="@{author}"
+                tools:text="chanatip songkrasing"
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_title"
+                />
+
+            <TextView
+                android:text="@{publishedAt}"
+                android:layout_marginTop="4dp"
+                tools:text="2022-03-09T15:42:34Z"
+                android:id="@+id/tv_publishedAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_author"
+                />
+
+            <ImageView
+                android:id="@+id/iv_article"
+                glideImage="@{urlImage}"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_publishedAt" />
+
+
+
+            <TextView
+                android:layout_marginTop="8dp"
+                android:textColor="@color/black"
+                android:text="@{content}"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="adasdasd asdasdasdasd asdasd asdasd asdasdasdasdasdas asdasdasd asdasdasd adasasd asdasdasd asdasdasd asdasdasd asdasdasdasd asdasd asdasdasd asdasd asdasd asdasdasdasd asdasdasd asdasdasd asdasd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_article"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>
+

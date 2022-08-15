@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_gravity="center"
+        android:src="@drawable/ic_no_internet"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/errorMessage"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/someting_wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_retry"
+        android:layout_marginTop="4dp"
+        android:text="@string/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>
